@@ -8,7 +8,7 @@ export class OrderRepository {
     private orders: Order[] = [];
 
     constructor(private datasource: StaticDataSource) {
-
+    
     }
 
     getOrders(): Order[] {
