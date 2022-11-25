@@ -20,7 +20,10 @@ export class StoreComponent {
     }
 
     get products(): Product[] {
-        return this.repository.getProducts(this.selectedCategory);
+        let pageIndex = (this.selectedPage - 1) * this.productsPerPage;
+        return this.repository
+            .getProducts(this.selectedCategory)
+            .slice(pageIndex, pageIndex + this.productsPerPage);
     }
 
     get categories(): string[] {

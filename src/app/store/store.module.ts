@@ -24,7 +24,9 @@ import { StoreComponent } from "./store.component";
         CheckoutComponent
     ],
     exports: [
-        StoreComponent
+        StoreComponent,
+        CartDetailComponent,
+        CheckoutComponent
     ]
 })
 export class StoreModule {

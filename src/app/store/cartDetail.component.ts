@@ -1,12 +1,11 @@
 import { Component } from "@angular/core";
+import { Cart } from "../model/cart.model";
 
 @Component({
-    selector: '',
     templateUrl: './cartDetail.component.html'
 })
 export class CartDetailComponent {
-    constructor() {
-
+    constructor(public cart: Cart) {
+        
     }
-    
 }
