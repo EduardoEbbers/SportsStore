@@ -2,6 +2,8 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
 import { ModelModule } from "../model/model.module";
+import { CartSummaryComponent } from "./cartSummary.component";
+import { CounterDirective } from "./counter.directive";
 import { StoreComponent } from "./store.component";
 
 @NgModule({
@@ -11,7 +13,9 @@ import { StoreComponent } from "./store.component";
         FormsModule
     ],
     declarations: [
-        StoreComponent
+        StoreComponent,
+        CounterDirective,
+        CartSummaryComponent
     ],
     exports: [
         StoreComponent
